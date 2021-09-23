@@ -6,8 +6,9 @@ We need to write a function that:
 * For multiples of 15 the function should return FizzBuzz
 */
 
+// In JavaScript || signifies 'OR'
 export const fizzBuzz = (inputNumber) => {
-  if(inputNumber < 1){
+  if(inputNumber < 1 || inputNumber > 15){
     return 'Please enter a number between 1 and 15';
   }
 };
