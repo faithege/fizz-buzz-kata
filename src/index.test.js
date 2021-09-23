@@ -26,4 +26,17 @@ describe('FizzBuzz function should', () => {
 
     expect(output).toEqual(expectedOutput);
   })
+
+  it('should return should return Fizz if the input is a multiple of 3', () => {
+    //Given that my number is a multiple of 3
+    const input = 9
+
+    //When I call the fizzbuzz function
+    const output = fizzBuzz(input)
+
+    //Then
+    const expectedOutput = "Fizz"
+
+    expect(output).toEqual(expectedOutput);
+  })
 });
