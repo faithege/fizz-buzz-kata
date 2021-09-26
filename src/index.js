@@ -11,7 +11,21 @@ export const fizzBuzz = (inputNumber) => {
   if(inputNumber < 1 || inputNumber > 15){
     return 'Please enter a number between 1 and 15';
   }
+  else if(inputNumber % 15 === 0){
+    return 'FizzBuzz'
+  }
   else if(inputNumber % 3 === 0){
     return 'Fizz'
   }
+  else if(inputNumber % 5 === 0){
+    return 'Buzz'
+  }
+  else {
+    return inputNumber
+  }
 };
+
+console.log(fizzBuzz(15))
+console.log(fizzBuzz(12))
+console.log(fizzBuzz(7))
+console.log(fizzBuzz(25))
