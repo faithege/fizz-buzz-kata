@@ -27,7 +27,7 @@ describe('FizzBuzz function should', () => {
     expect(output).toEqual(expectedOutput);
   })
 
-  it('should return should return Fizz if the input is a multiple of 3', () => {
+  it('should return Fizz if the input is a multiple of 3', () => {
     //Given that my number is a multiple of 3
     const input = 9
 
@@ -35,8 +35,20 @@ describe('FizzBuzz function should', () => {
     const output = fizzBuzz(input)
 
     //Then
-    const expectedOutput = "Fizz"
+    const expectedOutput = 'Fizz'
 
     expect(output).toEqual(expectedOutput);
+  })
+
+  it('should return Buzz if the input is a multiple of 5', () => {
+    expect(fizzBuzz(10)).toEqual('Buzz');
+  })
+
+  it('should return FizzBuzz if the input is a multiple of 15', () => {
+    expect(fizzBuzz(15)).toEqual('FizzBuzz');
+  })
+
+  it('should return the inputted number if it is not a multiple of 3, 5, or 15', () => {
+    expect(fizzBuzz(2)).toEqual(2);
   })
 });
