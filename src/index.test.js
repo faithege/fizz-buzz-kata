@@ -48,7 +48,7 @@ describe('FizzBuzz function should', () => {
     expect(fizzBuzz(15)).toEqual('FizzBuzz');
   })
 
-  it('should return the inputter number if it is not a multipl of 3, 5, or 15', () => {
+  it('should return the inputted number if it is not a multiple of 3, 5, or 15', () => {
     expect(fizzBuzz(2)).toEqual(2);
   })
 });

@@ -7,22 +7,34 @@ We need to write a function that:
 */
 
 export const fizzBuzz = (inputNumber) => {
-  // In JavaScript || signifies 'OR'
-  if(inputNumber < 1 || inputNumber > 15){
-    return 'Please enter a number between 1 and 15';
+  switch (true) {
+    case (inputNumber < 1 || inputNumber > 15):
+      return 'Please enter a number between 1 and 15'
+    case (inputNumber % 15 === 0):
+      return 'FizzBuzz'
+    case (inputNumber % 3 === 0):
+      return 'Fizz'
+    case (inputNumber % 5 === 0):
+      return 'Buzz'
+    default:
+      return inputNumber
   }
-  else if(inputNumber % 15 === 0){
-    return 'FizzBuzz'
-  }
-  else if(inputNumber % 3 === 0){
-    return 'Fizz'
-  }
-  else if(inputNumber % 5 === 0){
-    return 'Buzz'
-  }
-  else {
-    return inputNumber
-  }
+
+  // if(inputNumber < 1 || inputNumber > 15){
+  //   return 'Please enter a number between 1 and 15';
+  // }
+  // else if(inputNumber % 15 === 0){
+  //   return 'FizzBuzz'
+  // }
+  // else if(inputNumber % 3 === 0){
+  //   return 'Fizz'
+  // }
+  // else if(inputNumber % 5 === 0){
+  //   return 'Buzz'
+  // }
+  // else {
+  //   return inputNumber
+  // }
 };
 
 console.log(fizzBuzz(15))
