@@ -37,7 +37,8 @@ export const fizzBuzz = (inputNumber) => {
   // }
 };
 
-console.log(fizzBuzz(15))
+// node peculiarities prevented this from working - added "type": "module" to package.json 
+// https://stackoverflow.com/questions/61401475/why-is-type-module-in-package-json-file
 console.log(fizzBuzz(12))
 console.log(fizzBuzz(7))
 console.log(fizzBuzz(25))
